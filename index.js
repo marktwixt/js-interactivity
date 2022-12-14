@@ -103,14 +103,14 @@ const crossOffMovie = (event) => {
   };
 
 //(Int. Step 1) Create a function called revealMessage. 
-//Inside the function, call setTimeout, passing in a callback function 
-//and a time in milliseconds. - The callback function should add the hide class to message, 
-//Pass in the number 1000 to run the callback 1 second after setTimeout is invoked.
+//Inside the function, call setTimeout, passing in a callback function and a time in milliseconds.
 const revealMessage = () => {
 
 //(Int. Step 1) At the top of the revealMessage function, remove the hide class from message
     message.classList.remove('hide');
     setTimeout(() => {
+//(Int. Step 1) The callback function should add the hide class to message, 
         message.classList.add('hide');
+//(Int. Step 1) Pass in the number 1000 to run the callback 1 second after setTimeout is invoked.
     }, 1000);
 };
